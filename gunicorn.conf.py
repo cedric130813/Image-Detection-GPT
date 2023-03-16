@@ -1,3 +1,3 @@
 timeout = 999
-NUM_WORKERS=3
+workers = 3
 threads = 3
