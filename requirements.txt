@@ -8,3 +8,4 @@ pathlib==1.0.1
 tensorflow==2.11.0
 Gunicorn
 PIL
+urllib
