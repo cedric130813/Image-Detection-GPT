@@ -1,0 +1,61 @@
+/* style for the page body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+  }
+  
+  /* style for the header */
+  h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+  
+    /* style for the form */
+    form {
+        display: flex;
+        flex-direction: column; /* added to move button below input field */
+        align-items: center;
+        margin-bottom: 30px;
+    }
+  
+  
+  /* style for the input field */
+  input[type=text] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    width: 50%;
+    margin-right: 10px;
+  }
+  
+  /* style for the submit button */
+  input[type=submit] {
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+  }
+  
+  /* style for the result text */
+  p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+
+  img {
+    max-width: 20%;
+    height: 20%;
+  }
