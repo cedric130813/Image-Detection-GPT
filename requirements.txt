@@ -6,6 +6,3 @@ openai==0.27.2
 opencv-python==4.7.0.72
 pathlib==1.0.1
 tensorflow==2.11.0
-tensorflow-estimator==2.11.0
-tensorflow-intel==2.11.0
-tensorflow-io-gcs-filesystem==0.31.0
