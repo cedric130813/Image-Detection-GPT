@@ -1,1 +1,1 @@
-timeout = 200
+timeout = 1000
