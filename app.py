@@ -32,8 +32,7 @@ def index():
             openai.api_key = ("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")
             response = openai.Completion.create(
                 model="text-curie-001", #text-curie-001,text-davinci-003 https://beta.openai.com/docs/models/gpt-3
-                prompt=f"I want you to act as an retail recommendation system. \n
-                Based on the suggestion request, you will suggest three very similar retail items including its brand that a customer in Singapore could buy together with the suggestion request. My suggestion request looks like {im_class}",
+                prompt=f"I want you to act as an retail recommendation system. Based on the suggestion request, you will suggest three very similar retail items including its brand that a customer in Singapore could buy together with the suggestion request. My suggestion request looks like {im_class}",
                 temperature=0.7,
                 max_tokens=400)
             text = response['choices'][0]['text']
