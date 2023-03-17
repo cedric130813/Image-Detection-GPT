@@ -23,7 +23,7 @@ def index():
             except:
                 result = None
         if img_path:
-            model = load_model('xception_model.h5')
+            model = load_model('MobileNetV2_model.h5')
             img = image.load_img(img_path, target_size=(299, 299))
             image_array = image.img_to_array(img)
             x_train = np.expand_dims(image_array, axis=0)
