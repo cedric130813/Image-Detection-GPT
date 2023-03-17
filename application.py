@@ -5,7 +5,7 @@ from keras.applications import xception
 import openai
 import urllib.request
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 @app.route("/",methods=["GET","POST"])
 def index():
@@ -39,4 +39,4 @@ def index():
         return(render_template("index.html",result="waiting"))
 
 if __name__=="__main__":
-    app.run()
+    application.run()
