@@ -3,7 +3,6 @@ keras
 numpy
 openai==0.27.2
 opencv-python-headless
-pathlib==1.0.1
 tensorflow-cpu
 pillow
 gunicorn
