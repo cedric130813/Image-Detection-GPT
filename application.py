@@ -7,7 +7,7 @@ import urllib.request
 
 application = Flask(__name__)
 
-@app.route("/",methods=["GET","POST"])
+@application.route("/",methods=["GET","POST"])
 def index():
     img_path = None
     if request.method == "POST":
