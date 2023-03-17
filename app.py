@@ -3,10 +3,9 @@ import numpy as np
 import keras.utils as image
 from keras.models import load_model
 from keras.applications.xception import Xception, preprocess_input,decode_predictions
-import matplotlib.pyplot as plt
-from pathlib import Path
+# from pathlib import Path
 import openai
-import os
+# import os
 import urllib.request
 
 app = Flask(__name__)
