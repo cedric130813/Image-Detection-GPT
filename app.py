@@ -39,4 +39,4 @@ def index():
         return(render_template("index.html",result="waiting"))
 
 if __name__ == "__main__":
-    app.run(port=80, debug=True)
+    app.run(port=49152, debug=True)
