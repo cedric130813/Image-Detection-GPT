@@ -23,7 +23,7 @@ def index():
                 result = None
         if img_path:
             model = load_model('MobileNetV2_model.h5')
-            img = image.load_img(img_path, target_size=(299, 299))
+            img = image.load_img(img_path, target_size=(224, 224))
             image_array = image.img_to_array(img)
             x_train = np.expand_dims(image_array, axis=0)
             x_train = preprocess_input(x_train)
