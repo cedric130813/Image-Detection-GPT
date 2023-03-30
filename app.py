@@ -35,7 +35,7 @@ def index():
                 messages=[{"role":"system", "content":f"Based on the suggestion request which is and looks like {im_class}, recommend three specific items for a male runner looking for light shoes and write a short summarised product comparison of these 3 items"}],
                 temperature=0.5,
                 max_tokens=200)
-            text = response['choices'][0]['text']
+            text = response["choices"][0]["message"]["content"]
             return(render_template("index.html",result=text, img_url=url))
         else:
             return(render_template("index.html",result="waiting"))
