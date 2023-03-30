@@ -32,7 +32,7 @@ def index():
             openai.api_key = ("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")
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
-                prompt=f"Based on the suggestion request which is and looks like {im_class}, recommend three specific items for a male runner looking for light shoes and write a summarised product comparison of these 3 items",
+                messages=[{"role":"system", "content":f"Based on the suggestion request which is and looks like {im_class}, recommend three specific items for a male runner looking for light shoes and write a summarised product comparison of these 3 items"}],
                 temperature=0.5,
                 max_tokens=450)
             text = response['choices'][0]['text']
