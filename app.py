@@ -34,7 +34,7 @@ def index():
                 model="gpt-3.5-turbo",
                 messages=[{"role":"system", "content":f"Based on the suggestion request which is and looks like {im_class}, recommend three specific items for a male runner looking for light shoes and write a summarised product comparison of these 3 items"}],
                 temperature=0.5,
-                max_tokens=450)
+                max_tokens=200)
             text = response['choices'][0]['text']
             return(render_template("index.html",result=text, img_url=url))
         else:
