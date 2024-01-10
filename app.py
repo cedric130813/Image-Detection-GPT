@@ -29,7 +29,7 @@ def index():
             x_train = preprocess_input(x_train)
             prediction = model.predict(x_train)
             im_class = np.argmax(prediction[0], axis=-1)
-            openai.api_key = ("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")
+            openai.api_key = ("API-KEY") # insert API Key here
             response = openai.ChatCompletion.create(
                 model="gpt-3.5-turbo",
                 messages=[{"role":"system", "content":f"Based on the suggestion request which is and looks like {im_class}, recommend three specific items for a male runner looking for light shoes and write a short summarised product comparison of these 3 items"}],
